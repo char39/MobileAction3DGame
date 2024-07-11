@@ -35,7 +35,7 @@ public class JoyStick_TouchPad : MonoBehaviour
         {
             HandleTouchInput();
         }
-        if (Application.platform == RuntimePlatform.WindowsEditor)
+        if (Application.platform == RuntimePlatform.WindowsEditor || Application.platform == RuntimePlatform.WindowsPlayer)
         {
             HandleInput(Input.mousePosition);
         }
